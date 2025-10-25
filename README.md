@@ -21,8 +21,11 @@ project:
 ---
 
 ## 🎯 Overview  
-This project focuses on **predicting road accident severity** using machine learning models trained on environmental, temporal, and road-related factors.  
-By analyzing large-scale accident data, the goal is to uncover patterns and build predictive systems that assist in road safety analysis.
+Road accidents remain a major global concern, causing significant loss of life and resources each year. Identifying the factors that contribute to the severity of road accidents is crucial for improving public safety and designing preventive strategies.
+
+The “Road Accident Severity Prediction” project applies machine learning techniques to predict the severity level of accidents using various environmental, temporal, and roadway-related features. By analyzing conditions such as weather, visibility, lighting, road surface, and time of occurrence, this project aims to uncover hidden patterns that influence accident outcomes and enable proactive safety planning.
+
+The dataset, sourced from Kaggle Playground Series (Season 5, Episode 10), contains a rich combination of numerical and categorical attributes related to accident conditions. The target variable, Severity, represents how serious each incident is.
 
 ---
 

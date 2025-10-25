@@ -77,15 +77,15 @@ structure:
 |-----------|--------------------|
 | **📈 Linear Regression** | 0.7167 |
 | **🌲 Decision Tree Regressor** | 0.7538 |
-| **🌲 Random Forest Regressor** | 0.8778 |
+| **🌲🌲🌲 Random Forest Regressor** | 0.8778 |
 | **🔥 Gradient Boosting Regressor** | 0.8818 |
 | **⚡ XGBoost Regressor** | 0.8848 |
-| **LGMB Regressor** | **0.8849** |
-| **KNeighbors Regressor** | 0.0846 |
-| **MLP Regressor** | 4.422e-06 |
-| **Ridge** | 0.7167 |
-| **Lasso** | 0.2094 |
-| **Elastic Net** | 0.2303 |
+| **💡🚀📈 LGMB Regressor** | **0.8849** |
+| **📈📍🔢 KNeighbors Regressor** | 0.0846 |
+| **🕸️ MLP Regressor** | 4.422e-06 |
+| **📈📉➕🔲 Ridge** | 0.7167 |
+| **🤠✂️📉 Lasso** | 0.2094 |
+| **🔗⚖️📊 Elastic Net** | 0.2303 |
 
 
 > ✅ **Best Model:** LGMB Regressor  

@@ -49,20 +49,23 @@ structure:
     - test.csv
     - sample_submission.csv
   notebooks:
-    - EDA.ipynb
-    - Feature_Engineering.ipynb
-    - Model_Training.ipynb
-    - Final_Submission.ipynb
+    - Notebook.ipynb
   models:
     - gradient_boosting.pkl
     - random_forest.pkl
     - xgboost.pkl
+    - linear_regressor.pkl
+    - lgbm_regressor.pkl
+    - mlp_regressor.pkl
+    - kneighbour.pkl
+    - ridge.pkl
+    - lasso.pkl
+    - elastic_net.pkl
   submissions:
     - submission.csv
     - submission1.csv
     - submission2.csv
   files:
-    - requirements.txt
     - LICENSE
     - README.md
 ```
@@ -70,15 +73,22 @@ structure:
 ---
 
 ## 🤖 Models and Evaluation  
-| 🧠 Model | 📝 Description | 🎯 R² (Validation) | 🏆 Kaggle Score |
-|-----------|----------------|--------------------|----------------|
-| **📈 Linear Regression** | Baseline model | 0.82 | – |
-| **🌲 Random Forest Regressor** | Tuned ensemble via GridSearchCV | 0.90 | 0.05581 |
-| **🔥 Gradient Boosting Regressor** | Best-performing ensemble | **0.92** | **0.05579** |
-| **⚡ XGBoost Regressor** | Regularized boosting model | 0.89 | 0.05582 |
-| **🐈 CatBoost Regressor** | Handles categorical features | 0.91 | – |
+| 🧠 Model | 🎯 R² (Validation) |
+|-----------|--------------------|
+| **📈 Linear Regression** | 0.7167 |
+| **🌲 Decision Tree Regressor** | 0.7538 |
+| **🌲 Random Forest Regressor** | 0.8778 |
+| **🔥 Gradient Boosting Regressor** | 0.8818 |
+| **⚡ XGBoost Regressor** | 0.8848 |
+| **LGMB Regressor** | **0.8849** |
+| **KNeighbors Regressor** | 0.0846 |
+| **MLP Regressor** | 4.422e-06 |
+| **Ridge** | 0.7167 |
+| **Lasso** | 0.2094 |
+| **Elastic Net** | 0.2303 |
 
-> ✅ **Best Model:** Gradient Boosting Regressor  
+
+> ✅ **Best Model:** LGMB Regressor  
 > 🏁 **Leaderboard Score:** `0.05579`  
 > 📌 Consistent across validation and public board.
 
@@ -98,8 +108,8 @@ workflow:
 ---
 
 ## 📈 Results Summary
-- 🏆 **Best Model:** Gradient Boosting Regressor  
-- 📊 **Validation R²:** `0.92`  
+- 🏆 **Best Model:** LGMB Regressor   
+- 📊 **Validation R²:** `0.8849`  
 - 💯 **Leaderboard Score:** `0.05579`  
 - 🧩 **Rank:** Top consistent performer  
 - 🔍 Improved generalization using **cross-validation** and **early stopping**  
@@ -145,11 +155,4 @@ This project is licensed under the **MIT License** — you are free to use, modi
 
 ---
 
-## 🧩 Example Visualization
-> *(Optional — you can add your leaderboard screenshot or R² comparison bar plot here)*  
 
-```yaml
-visualizations:
-  - file: "figures/model_r2_comparison.png"
-    description: "R² score comparison for all trained models."
-```
